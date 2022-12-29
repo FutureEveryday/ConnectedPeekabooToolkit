@@ -1,4 +1,4 @@
-# ConnectedPeekabooToolkit
+# Connected Peekaboo Toolkit
 
 Connected Peekaboo Toolkit (CPT) is a design toolkit that design
 researchers can use to conduct a design ethnographic research---
@@ -26,14 +26,43 @@ de-briefings all of the captured data.
 
 ## Publication
 
-We publish this open-source design as a companion to the publication in the [ACM Transactions on Computer-Human Interaction (ToCHI)](https://dl.acm.org/journal/tochi). The paper is a great read/browse/ponder and introduces why we designed Connected Peekaboo Toolkit, how we did it and what the major results of deploying it were.
+We publish this open-source design as a companion to the paper "Seeing through Things: Exploring the Design Space of Privacy-Aware Data-Enabled Objects" in the [ACM Transactions on Computer-Human Interaction (ToCHI)](https://dl.acm.org/journal/tochi). The [paper](https://dl.acm.org/doi/10.1145/3577012) is a great read/browse/ponder and introduces why we designed Connected Peekaboo Toolkit, how we did it and what the major results of deploying it were.
+
+### Citation
+
+**ACM Ref**
+
+Yu-Ting Cheng, Mathias Funk, Rung-Huei Liang, and Lin-Lin Chen. 2022. Seeing Through Things: Exploring the Design Space of Privacy-Aware Data-Enabled Objects. ACM Trans. Comput.-Hum. Interact. (December 2022). https://doi.org/10.1145/3577012
+
+**BibTeX**
+
+````bibtex
+@article{10.1145/3577012,
+author = {Cheng, Yu-Ting and Funk, Mathias and Liang, Rung-Huei and Chen, Lin-Lin},
+title = {Seeing Through Things: Exploring the Design Space of Privacy-Aware Data-Enabled Objects},
+year = {2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1073-0516},
+url = {https://doi.org/10.1145/3577012},
+doi = {10.1145/3577012},
+journal = {ACM Trans. Comput.-Hum. Interact.},
+month = {dec},
+keywords = {Privacy Design, Field Study, Design Ethnography, Research Products, Design Space Exploration, Data-Enabled Objects}
+}
+````
 
 
-## Instructions
+### Abstract
+
+Increasing amounts of sensor-augmented research objects have been used in design research. We call these objects Data-Enabled Objects, which can be integrated into daily activities capturing data about people’s detailed whereabouts, behaviours and routines. These objects provide data perspectives on everyday life for contextual design research. However, data-enabled objects are still computational devices with limited privacy awareness and nuanced data sharing. To better design data-enabled objects, we explore privacy design spaces by inviting 18 teams of undergraduate design students to re-design the same type of sensor-enabled home research camera. We developed the Connected Peekaboo Toolkit (CPT) to support the design teams in designing, building, and directly deploying their prototypes in real home studies. We conducted Thematic Analysis to analyse their outcomes which led us to interpret that privacy is not just an obstacle but can be a driver by unfolding an exploration of possible design spaces for data-enabled objects.
+
+
+## Setup instructions
 
 ### 1. Prepare Materials
 
-Follow steps in Peekaboo Cam ([https://github.com/FutureEveryday/PeekabooCam](https://github.com/FutureEveryday/PeekabooCam)) and prepare materials (you can remove button material).
+Follow steps in Peekaboo Cam ([https://github.com/FutureEveryday/PeekabooCam](https://github.com/FutureEveryday/PeekabooCam)) and prepare materials (you can remove all the "button material").
 
 **Electronic Materials (Peekaboo Cam)**
 
@@ -45,7 +74,7 @@ Follow steps in Peekaboo Cam ([https://github.com/FutureEveryday/PeekabooCam](ht
 - Mini Breadboard \*1
 - SD card 16G \*1
 
-**Code Materials**
+**Software material**
 
 - `Peekaboo_pi.img`
 - `ESP_sensing_modules/module1/module1.ino`
@@ -56,7 +85,7 @@ Follow steps in Peekaboo Cam ([https://github.com/FutureEveryday/PeekabooCam](ht
 
 **Step 1**
 
-Download the operating system image `peekaboo_pi.img` to your computer.
+Download the operating system image `peekaboo_pi.img` to a folder on your computer. The download is large (2.3G!!) and available from here: [peekaboo.img](https://mathias-funk.com/publications/2022/ConnectedPeekabooToolkit/software/peekaboo_pi.img).
 
 **Step 2**
 
@@ -67,10 +96,10 @@ Insert a new SD card (the card will be fully erased!)
 Either use a program such as [Balena Etcher](https://www.balena.io/etcher/) to flash the image onto the SD card, or use Terminal or PuTTY and type:
 
 ````bash
-sudo dd if=Desktop/peekaboo_pi.img of=/dev/disk2
+sudo dd if=<folder on your drive>/peekaboo_pi.img of=/dev/disk2
 ````
 
-_Note: Using the Terminal is risky, you need to know what you are doing!_
+_Note: Using the Terminal is risky, you need to know what you are doing! Replace <folder on your drive> with the correct source path for the image._
 
 
 ### 3. Follow the Building Steps in Peekaboo Cam
