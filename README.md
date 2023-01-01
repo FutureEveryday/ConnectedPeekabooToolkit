@@ -85,7 +85,7 @@ Follow steps in Peekaboo Cam ([https://github.com/FutureEveryday/PeekabooCam](ht
 
 **Step 1**
 
-Download the operating system image `peekaboo_pi.img` to a folder on your computer. The download is large (2.3G!!) and available from here: [peekaboo.img](https://mathias-funk.com/publications/2022/ConnectedPeekabooToolkit/software/peekaboo_pi.img).
+Download the operating system image `peekaboo_pi.img` to a folder on your computer. The download is large (2.3G!!) and available from here: [peekaboo.img](https://mathias-funk.com/resources/2022/ConnectedPeekabooToolkit/software/peekaboo_pi.img).
 
 **Step 2**
 
